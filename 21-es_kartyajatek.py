@@ -1,8 +1,9 @@
 import random
 print("Ez a 21-es kártyajáték")
 jatekmod = input("Gép vagy ember ellen szeretnél játszani?")
+
 def gep_verzio():
-    print("jétékos_lapjai:")
+    print("Játékos_lapjai:")
     jatekos = []
     jatekos.append(random.randint(2,11))
     jatekos.append(random.randint(2,11))
@@ -12,7 +13,7 @@ def gep_verzio():
     jatekos_db = len(jatekos)
     print(f"Játékos lapjainak darab száma:{jatekos_db}")
     print("")
-    print("gép lapjai:")
+    print("Gép lapjai:")
     gep = []
     gep.append(4)
     gep.append(6)
@@ -23,7 +24,7 @@ def gep_verzio():
     print(f"Gép lapjainak darab száma:{gep_db}")
 
 def ember_verzio():
-    print("játékos1 lapjai:")
+    print("Játékos1 lapjai:")
     jatekos1 = []
     jatekos1.append(random.randint(2,11))
     jatekos1.append(random.randint(2,11))
@@ -31,7 +32,7 @@ def ember_verzio():
     jatekos1_ertek = sum(jatekos1)
     print(f"Összesen:{jatekos1_ertek}")
     jatekos1_db = len(jatekos1)
-    print(f"játékos1 lapjainak darab száma:{jatekos1_db}")
+    print(f"Játékos1 lapjainak darab száma:{jatekos1_db}")
     print("")
     print("Játékos2 lapjai:")
     jatekos2 = []
