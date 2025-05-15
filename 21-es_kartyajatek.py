@@ -9,6 +9,10 @@ gep_kartya.append(5)
 print(gep_kartya)
 gep_lap_ertek = sum(gep_kartya)
 print(f"Össesen:{gep_lap_ertek}")
+gep_lap = len(gep_kartya)
+print(f"gép lapjainak darab száma:{gep_lap}")
+
+print("")
 
 print("jatekos lapjai:")
 jatekos_kartya = []
