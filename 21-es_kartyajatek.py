@@ -43,10 +43,10 @@ def ember_verzio():
     jatekos2_db = len(jatekos2)
     print(f"Játékos2 lapjainak darab száma:{ jatekos2_db}")
 
-    if jatekmod == "gép":
-        gep_verzio()
-    elif jatekmod == "ember":
-        ember_verzio()
-    else:
-        print("Érvénytelen játékmód.")
+if jatekmod == "gép":
+     gep_verzio()
+elif jatekmod == "ember":
+    ember_verzio()
+else:
+    print("Érvénytelen játékmód.")
 
