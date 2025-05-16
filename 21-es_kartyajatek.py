@@ -22,6 +22,22 @@ def gep_verzio():
     print(f"Összesen:{gep_ertek}") 
     gep_db = len(gep)
     print(f"Gép lapjainak darab száma:{gep_db}")
+    if gep_ertek == 21:
+        print("A gép nyert")
+    elif jatekos_ertek == 21:
+        print("Nyertél")
+    elif gep_ertek > 21:
+        print("Túl mentél a megengedettnél(21)")
+    elif jatekos_ertek > 21:
+        print("Túl mentél a megengedettnél(21)")
+    elif jatekos_ertek > gep_ertek:
+        print("Nyertél")
+    elif jatekos_ertek < gep_ertek:
+        print("Vesztettél")
+
+
+
+
 
 def ember_verzio():
     print("Játékos1 lapjai:")
