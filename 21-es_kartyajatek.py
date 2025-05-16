@@ -32,19 +32,19 @@ def gep_verzio():
         print("Nyertél")
     elif gep_ertek > 21:
         print("")
-        print("Túl mentél a megengedettnél(21)")
+        print("Túl mentél a 21-nél")
+        print("Vesztettél")
     elif jatekos_ertek > 21:
         print("")
-        print("Túl mentél a megengedettnél(21)")
+        print("Túl mentél a 21-nél")
+        print("")
+        print("Vesztettél")
     elif jatekos_ertek > gep_ertek:
         print("")
         print("Nyertél")
     elif jatekos_ertek < gep_ertek:
         print("")
         print("Vesztettél")
-
-
-
 
 
 def ember_verzio():
@@ -67,6 +67,35 @@ def ember_verzio():
     print(f"Összesen:{jatekos2_ertek}")
     jatekos2_db = len(jatekos2)
     print(f"Játékos2 lapjainak darab száma:{ jatekos2_db}")
+    print("")
+    print("Eredmények:")
+    if jatekos1_ertek == 21:
+        print("")
+        print("Játékos1 nyert")
+    elif jatekos2_ertek == 21:
+        print("")
+        print("Játékos2 nyert")
+    elif jatekos1 > 21:
+        print("")
+        print("Túl mentél 21-nél")
+        print("")
+        print("Vesztettél")
+    elif  jatekos2 > 21:
+        print("")
+        print("Túl mentél 21-nél")
+        print("")
+        print("Vesztettél")
+    elif jatekos1_ertek > jatekos2_ertek:
+        print("")
+        print("Játékos1 nyert")
+    elif jatekos1_ertek < jatekos2_ertek:
+        print("")
+        print("Játékos2 nyert")
+    elif jatekos1_ertek == jatekos2_ertek:
+        print("")
+        print("Döntetlen, játsz újra")
+        
+    
 
 if jatekmod == "gép":
      gep_verzio()
