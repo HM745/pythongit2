@@ -26,10 +26,10 @@ def gep_verzio():
     print("Eredmények:")
     if gep_ertek == 21:
         print("")
-        print("gA gép nyert✔️")
+        print("✅A gép nyert✅")
     elif jatekos_ertek == 21:
         print("")
-        print("Nyertél✔️")
+        print("✅Nyertél✅")
     elif gep_ertek > 21:
         print("")
         print("🔴Túl mentél a 21-nél🔴")
@@ -41,7 +41,7 @@ def gep_verzio():
         print("❌Vesztettél❌")
     elif jatekos_ertek > gep_ertek:
         print("")
-        print("Nyertél✔️")
+        print("✅Nyertél✅")
     elif jatekos_ertek < gep_ertek:
         print("")
         print("❌Vesztettél❌")
@@ -74,34 +74,34 @@ def ember_verzio():
     print("Eredmények:")
     if jatekos1_ertek == 21:
         print("")
-        print("Játékos1 nyert✔️")
+        print("✅Játékos1 nyert✅")
         print("")
         print("❌Játékos2 veszett❌")
     elif jatekos2_ertek == 21:
         print("")
-        print("Játékos2 nyert✔️")
+        print("✅Játékos2 nyert✅")
         print("")
         print("❌Játékos1 vesztett❌")
     elif jatekos1_ertek > 21:
         print("")
         print("🔴Játékos1 Túl ment 21-nél🔴")
         print("")
-        print("Játékos2 nyert✔️")
+        print("✅Játékos2 nyert✅")
         print("")
         print("❌Játékos1 vesztett❌")
     elif  jatekos2_ertek > 21:
         print("")
         print("🔴Játékos1 Túl ment 21-nél🔴")
         print("")
-        print("Játékos2 nyert✔️")
+        print("✅Játékos2 nyert✅")
         print("")
         print("❌Játékos1 vesztett❌")
     elif jatekos1_ertek > jatekos2_ertek:
         print("")
-        print("Játékos1 nyert✔️")
+        print("✅Játékos1 nyert✅")
     elif jatekos1_ertek < jatekos2_ertek:
         print("")
-        print("Játékos2 nyert✔️")
+        print("✅Játékos2 nyert✅")
     elif jatekos1_ertek == jatekos2_ertek:
         print("")
         print("🕒Döntetlen, játszatok újra🕒")
