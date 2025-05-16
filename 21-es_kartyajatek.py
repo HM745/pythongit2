@@ -45,6 +45,9 @@ def gep_verzio():
     elif jatekos_ertek < gep_ertek:
         print("")
         print("Vesztettél")
+    elif gep_ertek == jatekos_ertek:
+        print("")
+        print("Döntetlen, játsz újra")
 
 
 def ember_verzio():
@@ -75,12 +78,12 @@ def ember_verzio():
     elif jatekos2_ertek == 21:
         print("")
         print("Játékos2 nyert")
-    elif jatekos1 > 21:
+    elif jatekos1_ertek > 21:
         print("")
         print("Túl mentél 21-nél")
         print("")
         print("Vesztettél")
-    elif  jatekos2 > 21:
+    elif  jatekos2_ertek > 21:
         print("")
         print("Túl mentél 21-nél")
         print("")
