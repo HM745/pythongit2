@@ -1,9 +1,9 @@
 import random
 print("Ez a 21-es kártyajáték")
-jatekmod = input("Gép vagy ember ellen szeretnél játszani?")
+jatekmod = input("Gép vagy ember ellen szeretnél játszani?(gép/ember)")
 
 def gep_verzio():
-    print("Játékos_lapjai:")
+    print("Játékos lapjai:")
     jatekos = []
     jatekos.append(random.randint(2,11))
     jatekos.append(random.randint(2,11))
@@ -23,29 +23,48 @@ def gep_verzio():
     gep_db = len(gep)
     print(f"Gép lapjainak darab száma:{gep_db}")
     print("")
-    print("Eredmények:")
+    uj_lap = input("Szeretnél húzni mégegy lapot?(igen/nem)")
+    if uj_lap == "igen":
+        jatekos.append(random.randint(2,11))
+        print(f"Új lappal együtt a lapjaid:{jatekos}")
+        jatekos_ertek = sum(jatekos)
+        jatekos_db = len(jatekos)
+        print(f"Így összesen:{jatekos_ertek}")
+        print(f"Kártyáid darab száma:{jatekos_db}")
+    elif uj_lap == "nem":
+        print("Nem érvényes választás")
+        print("Nem huztál új lapot, így a lapjaid értéke nem változott")
+    else:
+        print("Nem érvényes választás")
     if gep_ertek == 21:
+        print("Eredmények:")
         print("")
         print("✅A gép nyert✅")
     elif jatekos_ertek == 21:
+        print("Eredmények:")
         print("")
         print("✅Nyertél✅")
     elif gep_ertek > 21:
+        print("Eredmények:")
         print("")
         print("🔴Túl mentél a 21-nél🔴")
         print("❌Vesztettél❌")
     elif jatekos_ertek > 21:
+        print("Eredmények:")
         print("")
         print("🔴Túl mentél a 21-nél🔴")
         print("")
         print("❌Vesztettél❌")
     elif jatekos_ertek > gep_ertek:
+        print("Eredmények:")
         print("")
         print("✅Nyertél✅")
     elif jatekos_ertek < gep_ertek:
+        print("Eredmények:")
         print("")
         print("❌Vesztettél❌")
     elif gep_ertek == jatekos_ertek:
+        print("Eredmények:")
         print("")
         print("🕒Döntetlen, játsz újra🕒")
 
