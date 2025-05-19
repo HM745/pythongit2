@@ -119,7 +119,7 @@ def ember_verzio():
     if jatekos2_uj_lap == "igen":
         jatekos2.append(random.randint(2,11))
         print("")
-        print(f"Játékos 2 új lapot húzott, így a lapja:{jatekos2}")
+        print(f"Játékos 2 új lapot húzott, így a lapjai:{jatekos2}")
         jatekos2_ertek = sum(jatekos2)
         jatekos2_db = len(jatekos2)
         print(f"Így játékos 2 lapjai összesen:{jatekos2_ertek}")
