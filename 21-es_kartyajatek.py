@@ -13,10 +13,10 @@ def gep_verzio():
     jatekos_db = len(jatekos)
     print(f"Játékos lapjainak darab száma:{jatekos_db}")
     print("")
-    print("Gép lapjai:")
     gep = []
     gep.append(4)
     gep.append(6)
+    print("Gép lapjai:")
     print(gep)
     gep_ertek = sum(gep)
     print(f"Összesen:{gep_ertek}") 
